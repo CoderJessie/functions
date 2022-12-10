@@ -35,6 +35,6 @@ const jonas = {
 	passport: 24739479284,
 };
 
-const checkIn = function (flightNum, passenger) {};
+// const checkIn = function (flightNum, passenger) {};
 
-checkIn(flight, jonas);
+// checkIn(flight, jonas);
