@@ -84,3 +84,4 @@ const transformer = function (str, fn) {
 };
 
 transformer('Javascript is the best!', upperFirstWord); // we are only passing in the 'upperFirstWord' as a value and not calling it as afunction because the transformer function would do the calling.
+transformer('Javascript is the best!', oneWord); // 'oneWord and upperFirstWord' are callback funtions because we didnt call them ourself.
