@@ -1,18 +1,8 @@
 'use strict';
 
-/*
-// Default parameters
 const bookings = [];
 
-const createBooking = function (
-	flightNum,
-	numPassengers = 1,
-	price = 199 * numPassengers
-) {
-	// ES5
-	// numPassengers = numPassengers || 1;
-	// price = price || 199;
-
+const createBooking = function (flightNum, numPassengers, price) {
 	const booking = {
 		flightNum,
 		numPassengers,
@@ -23,11 +13,3 @@ const createBooking = function (
 };
 
 createBooking('LH123');
-createBooking('LH123', 2, 800);
-createBooking('LH123', 2);
-createBooking('LH123', 5);
-
-createBooking('LH123', undefined, 1000);
-*/
-
-// HOW PASSING AN ARGUMENT WORKS: VALUE VS REFERENCE
