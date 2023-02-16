@@ -141,7 +141,7 @@ const book = lufthansa.book;
 // book(23, 'Sarah Williams');
 
 // CALL METHOD
-book.call(eurowings, 23, 'Sarah williams');
+book.call(eurowings, 23, 'Sarah Williams');
 console.log(eurowings);
 
 book.call(lufthansa, 239, 'Mary Cooper');
@@ -162,3 +162,9 @@ book.apply(swiss, flightData);
 console.log(swiss);
 
 book.call(swiss, ...flightData);
+
+// BIND METHOD
+// book.call(eurowings, 23, 'Sarah Williams');
+
+const bookEW = book.bind(eurowings);
+bookEW(23, 'Steven Williams');
