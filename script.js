@@ -156,6 +156,8 @@ const swiss = {
 book.call(swiss, 583, 'Mary Cooper');
 console.log(swiss);
 
+// adding this
+
 // APPLY METHOD
 const flightData = [583, 'George Cooper'];
 book.apply(swiss, flightData);
