@@ -112,6 +112,7 @@ greetArr('Hi')('Jessica');
 */
 
 // The Call and Apply Methods
+// The Call and Apply Methods
 const lufthansa = {
 	airline: 'Lufthansa',
 	iastaCode: 'LH',
