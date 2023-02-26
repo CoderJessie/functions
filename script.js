@@ -111,7 +111,7 @@ const greetArr = (greeting) => (name) => console.log(`${greeting} ${name}`);
 greetArr('Hi')('Jessica');
 */
 
-// The Call and Apply Methods
+///////////////////////////////////
 // The Call and Apply Methods
 const lufthansa = {
 	airline: 'Lufthansa',
@@ -157,8 +157,6 @@ const swiss = {
 book.call(swiss, 583, 'Mary Cooper');
 console.log(swiss);
 
-// adding this
-
 // APPLY METHOD
 const flightData = [583, 'George Cooper'];
 book.apply(swiss, flightData);
@@ -174,3 +172,19 @@ const bookLH = book.bind(lufthansa);
 const bookLX = book.bind(swiss);
 
 bookEW(23, 'Steven Williams');
+
+const bookEW23 = book.bind(eurowings, 23);
+bookEW23('Jonas Schmedtmann');
+bookEW23('Martha Cooper');
+
+// With Event Listeners
+lufthansa.planes = 300;
+lufthansa.buyPlane = function () {
+	console.log(this);
+
+	this.planes++;
+	console.log(this.planes);
+};
+// lufthansa.buyPlane();
+
+document.querySelector('.buy').addEventListener('click', lufthansa.buyPlane);
