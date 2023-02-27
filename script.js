@@ -237,4 +237,11 @@ Here are your tasks:
 4. Run the 'displayResults' method at the end of each 'registeredNewAnswer' method call.
 
 HINT: Use many of the tools you learned about in this and the last section
+
+BONUS: Use the 'displayResults' method to display the 2 arrays in the test data. Use both the 'array' and the 'string' option. Do not put the arrays in the poll objects! So what should the this keyword look like in this situation?
+
+BONUS TEST DATA 1: (5, 2, 3)
+BONUS TEST DATA 2: (1, 5, 3, 9, 6, 1)
+
+GOOD LUCK
 */
