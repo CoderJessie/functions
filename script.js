@@ -289,5 +289,5 @@ poll.displayResults.call({ answers: [1, 5, 3, 9, 6, 1] }, 'array');
 
 poll.displayResults.call({ answers: [1, 5, 3, 9, 6, 1] });
 [5, 2, 3];
-poll.displayResults.call({ answers: [3, 2, 9] }, 'array');
-poll.displayResults.call({ answers: [3, 2, 9] }, 'string');
+// poll.displayResults.call({ answers: [3, 2, 9] }, 'array');
+// poll.displayResults.call({ answers: [3, 2, 9] }, 'string');
