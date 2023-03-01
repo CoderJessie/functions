@@ -252,7 +252,7 @@ const poll = {
 	// This generates [0, 0, 0, 0]. More in the next section
 	answers: new Array(4).fill(0),
 	registerNewAnswer() {
-		// Get Answer
+		// Getting Answer
 		const answer = Number(
 			prompt(
 				`${this.question}\n${this.options.join('\n')}\n(Write option number)`
@@ -260,10 +260,10 @@ const poll = {
 		);
 		console.log(answer);
 
-		// Register Answer
+		// Registering Answer
 		typeof answer == 'number' &&
 			answer < this.answers.length &&
-			this.answers[answer]++;
+			this.answers[answer]++; // Short-circuiting with the && operator
 
 		this.displayResults();
 		this.displayResults('string');
@@ -282,10 +282,11 @@ document
 	.querySelector('.poll')
 	.addEventListener('click', poll.registerNewAnswer.bind(poll));
 
-poll.displayResults.call({ answers: [5, 2, 3] }, 'string');
-poll.displayResults.call({ answers: [1, 5, 3, 9, 6, 1] }, 'string');
-poll.displayResults.call({ answers: [5, 2, 3] }, 'array');
-poll.displayResults.call({ answers: [1, 5, 3, 9, 6, 1] }, 'array');
+// poll.displayResults.call({ answers: [5, 2, 3] }, 'string');
+// poll.displayResults.call({ answers: [1, 5, 3, 9, 6, 1] }, 'string');
+// poll.displayResults.call({ answers: [5, 2, 3] }, 'array');
+// poll.displayResults.call({ answers: [1, 5, 3, 9, 6, 1] }, 'array');
 
-poll.displayResults.call({ answers: [1, 5, 3, 9, 6, 1] });
-[5, 2, 3];
+// poll.displayResults.call({ answers: [1, 5, 3, 9, 6, 1] });
+// [5, 2, 3];
+poll.registerNewAnswer();
